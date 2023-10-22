@@ -16,7 +16,7 @@ const questions = [
         // test for valid color
         type: 'input',
         message: 'What color would you like the text? Please enter a color name or hex value.',
-        name: 'text-color',
+        name: 'textColor',
     },
     {
         // question for shape
@@ -43,7 +43,7 @@ const questions = [
         // test for valid color
         type: 'input',
         message: 'What color would you like the shape to be?',
-        name: 'shape-color',
+        name: 'shapeColor',
     }
 ];
 

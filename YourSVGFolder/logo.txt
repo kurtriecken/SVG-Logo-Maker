@@ -1,1 +1,1 @@
-{"text":"23","text-color":"blue","shape":"Circle","shape-color":"aer"}
+{"text":"","textColor":"","shape":"Circle","shapeColor":""}
