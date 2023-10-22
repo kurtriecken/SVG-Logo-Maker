@@ -9,6 +9,12 @@ const questions = [
         type: 'input',
         message: 'Please type 1-3 characters for your logo:',
         name: 'text',
+        validate: async (input) => {
+            if (input.length < 1 || input.length > 3) {
+                return 'Improper length! Try again.'
+            }
+            return true;
+        },
     },
     {
         // question for text color
