@@ -50,7 +50,7 @@ const questions = [
 function writeToFile(fileName, data) {
     let text = generateSVG(data);
 
-    fs.writeFile(fileName, JSON.stringify(data), (err) => {
+    fs.writeFile(fileName, text, (err) => {
         err ? console.error(err) : console.log('Generated logo.svg');
     });
 }
@@ -59,7 +59,7 @@ function init() {
     inquirer
         .prompt(questions)
         .then((response) => {
-            writeToFile("./YourSVGFolder/logo.txt", response);
+            writeToFile("./YourSVGFolder/logo.svg", response);
         });
 }
 

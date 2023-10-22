@@ -9,7 +9,7 @@
 <circle cx="50%" cy="50%" r="75" fill="orange" stroke="black" stroke-width="2"/>
 
 <!-- Triangle template -->
-<!-- <polygon points="75,175 150,25 225,175" fill="red" stroke-width="2" stroke="black"/> -->
+<polygon points="75,175 150,25 225,175" fill="red" stroke-width="2" stroke="black"/>
 
 <!--================================== 3 CHARACTERS====================================-->
 <!-- Text positioning for square and circle -->

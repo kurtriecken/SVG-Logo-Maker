@@ -6,49 +6,41 @@ const {Circle, Triangle, Square} = require('../lib/shapes.js');
 
 function generateSVG(data) {
     // Call whatever functions are needed to generate the text and shape svg code
-    console.log(data.shape);
+    // console.log(data.shape);
 
-    let text = '';
+    let shapeText = '';
     let shape;
-
-    // if (data.shape == 'Triangle') {
-    //     let shape = new Triangle(data.shapeColor);
-    //     text = shape.render();
-    // }
-    // else if (data.shape == 'Circle') {
-    //     let shape = new Circle(data.shapeColor);
-    //     text = shape.render();
-    // }
-    // else {
-    //     let shape = new Square(data.shapeColor);
-    //     text = shape.render();
-    // }
 
     switch (data.shape) {
         case 'Triangle':
             console.log('You picked Triangle!');
 
             shape = new Triangle(data.shapeColor);
-            text = shape.render();            
+            shapeText = shape.render();            
             break;
         case 'Circle':
             console.log('You picked Circle!');
             shape = new Circle(data.shapeColor);
-            text = shape.render();
+            shapeText = shape.render();
             break;
         case 'Square':
             console.log('You picked Square!');
 
             shape = new Square(data.shapeColor);
-            text = shape.render();
+            shapeText = shape.render();
             break;
     }
 
+    let text = `<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    
+    ${shapeText} 
+    
+    </svg>`;
 
-    console.log(text);
+    // console.log(text);
 
-    return data.shape;
+    return text;
 }
 
 module.exports = generateSVG;
-//<svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg"> ${variables go in here} </svg>
+//
