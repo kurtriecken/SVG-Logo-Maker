@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateSVG = require('./utils/generateShape');
 
 // Questions block for inquirer to prompt to user
 const questions = [
@@ -47,6 +48,8 @@ const questions = [
 ];
 
 function writeToFile(fileName, data) {
+    let text = generateSVG(data);
+
     fs.writeFile(fileName, JSON.stringify(data), (err) => {
         err ? console.error(err) : console.log('Generated logo.svg');
     });

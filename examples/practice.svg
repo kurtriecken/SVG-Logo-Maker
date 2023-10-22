@@ -1,12 +1,37 @@
+<!-- <div width="300px" height="200px"> -->
+
 <svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
 
 <!-- Square template -->
-<rect x="25" y="25" width="150" height="150" stroke="black" fill="transparent" stroke-width="2"/>
+<rect x="25%" y="25" width="150" height="150" stroke="black" fill="green" stroke-width="2"/>
 
 <!-- Circle template -->
-<circle cx="100" cy="100" r="75" fill="transparent" stroke-width="2" stroke="#1A83FD"/>
+<circle cx="50%" cy="50%" r="75" fill="orange" stroke="black" stroke-width="2"/>
 
 <!-- Triangle template -->
-<polyline points="25,175 100,25 175,175 25,175" fill="transparent" stroke-width="2" stroke="blue"/>
+<!-- <polygon points="75,175 150,25 225,175" fill="red" stroke-width="2" stroke="black"/> -->
+
+<!--================================== 3 CHARACTERS====================================-->
+<!-- Text positioning for square and circle -->
+<!-- <text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle" style="font-size: 3.7em; font-weight: bolder">HLW</text> -->
+
+<!-- Text positioning for triangle -->
+<!-- <text x="50%" y="78%" text-anchor="middle" dominant-baseline="middle" style="font-size: 2.7em; font-weight: bolder">HLW</text> -->
+
+<!--================================== 2 CHARACTERS====================================-->
+<!-- Text positioning for square and circle -->
+<text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle" style="font-size: 3.7em; font-weight: bolder">HW</text>
+
+<!-- Text positioning for triangle -->
+<!-- <text x="50%" y="68%" text-anchor="middle" dominant-baseline="middle" style="font-size: 2.7em; font-weight: bolder">HW</text> -->
+
+<!--================================== 1 CHARACTER====================================-->
+<!-- Text positioning for square and circle -->
+<!-- <text x="50%" y="53%" text-anchor="middle" dominant-baseline="middle" style="font-size: 3.7em; font-weight: bolder">W</text> -->
+
+<!-- Text positioning for triangle -->
+<!-- <text x="50%" y="67%" text-anchor="middle" dominant-baseline="middle" style="font-size: 3.5em; font-weight: bolder">W</text> -->
+
 
 </svg>
+<!-- </div> -->
