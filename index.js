@@ -1,6 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const generateSVG = require('./utils/generateShape');
+const validateColor = require('validate-color').default;
 
 // Questions block for inquirer to prompt to user
 const questions = [
@@ -23,6 +24,7 @@ const questions = [
         type: 'input',
         message: 'What color would you like the text? Please enter a color name or hex value.',
         name: 'textColor',
+        validate: validateColor,
     },
     {
         // question for shape
