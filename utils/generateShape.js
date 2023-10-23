@@ -34,7 +34,9 @@ function generateSVG(data) {
     let characters = new Characters(data.text, data.textColor, data.shape);
     let innerText = characters.render();
 
-    console.log(innerText);
+    // console.log(innerText);
+
+    console.log(shapeText);
 
     let text = `<svg width="300" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg">
     

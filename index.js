@@ -52,6 +52,7 @@ const questions = [
         type: 'input',
         message: 'What color would you like the shape to be?',
         name: 'shapeColor',
+        validate: validateColor,
     }
 ];
 
