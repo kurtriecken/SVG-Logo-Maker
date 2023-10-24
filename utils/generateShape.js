@@ -38,7 +38,7 @@ ${shapeText}
     
 ${innerText}
         
-</svg>`;;
-}
+</svg>`;
+};
 
 module.exports = generateSVG;

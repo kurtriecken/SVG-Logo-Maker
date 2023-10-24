@@ -46,17 +46,17 @@ Use the command line to navigate to the directory where the program is located. 
 
 `node index.js`
 
-Follow the prompts and answer the questions. Feel free to be verbose! All of the text you enter will be stored in the markdown file ready for you.
+Follow the prompts and answer the questions. Note: you may enter a simple color name (i.e. blue, red, orange) or a hex value preceeded by a '#' (i.e. #FFFFFF, #102040). The program will wait for a value of these types before proceeding.
 
 At the end, you should get the following message:
 
-`Success!`
+`Generated logo.svg`
 
-Your README file will be located in the folder called "YourFileIsInHere", because your file is in there.
+Your .svg file will be located in the folder titled "YourSVGFolder" (so you don't mix it up with your friend's folder). Feel free to use the file how you please!
 
 Watch the following video for a complete walkthrough:
 
-[Video](https://watch.screencastify.com/v/mcfN6PWrV7cRaTdIaI7K)
+[Video](https://watch.screencastify.com/v/R6kMcBrArfz4pfpCGKWs)
   
 
 ## License
