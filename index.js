@@ -6,7 +6,7 @@ const validateColor = require('validate-color').default;
 // Questions block for inquirer to prompt to user
 const questions = [
     {
-        // question for text (limited to between 1 and 3 characters)
+        // Question for text to print (limited to between 1 and 3 characters)
         type: 'input',
         message: 'Please type 1-3 characters for your logo:',
         name: 'text',
@@ -18,17 +18,17 @@ const questions = [
         },
     },
     {
-        // question for text color
-        // can be color name or hex value
-        // test for valid color
+        // Question for text color
+        // Can be color name or hex value
+        // Validates valid color with 'validate-color' package
         type: 'input',
         message: 'What color would you like the text? Please enter a color name or hex value.',
         name: 'textColor',
         validate: validateColor,
     },
     {
-        // question for shape
-        // pick from a list (triangle, circle, or square)
+        // Question for shape
+        // Choose from a list (triangle, circle, or square)
         type: 'list',
         name: 'shape',
         message: 'Please select a shape:',
@@ -46,9 +46,9 @@ const questions = [
         default: 'Circle',
     },
     {
-        // question for shape color
-        // can be color name or hex value
-        // test for valid color
+        // Question for shape color
+        // Can be color name or hex value
+        // Validates valid color with 'validate-color' package
         type: 'input',
         message: 'What color would you like the shape to be?',
         name: 'shapeColor',
@@ -56,6 +56,8 @@ const questions = [
     }
 ];
 
+// Performs call to generate the SVG string
+// Writes the string to a new file
 function writeToFile(fileName, data) {
     let text = generateSVG(data);
 
@@ -64,6 +66,8 @@ function writeToFile(fileName, data) {
     });
 }
 
+
+// Initialization of page
 function init() {
     inquirer
         .prompt(questions)
